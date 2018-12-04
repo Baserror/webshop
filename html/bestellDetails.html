@@ -1,0 +1,39 @@
+
+
+<div class="bestellDetails">
+
+
+    <form action="index.php" method="post" enctype="multipart/form-data">
+
+    <b>%produktArt%</b>
+    <input type="hidden" name="flyerdaten[]" value="%produktArt%">
+    <p>%groesse%</p>
+    <input type="hidden" name="flyerdaten[]" value="%groesse%">
+    <p>%papstark%  %papglanz%</p>
+    <input type="hidden" name="flyerdaten[]" value="%papstark%">
+    <input type="hidden" name="flyerdaten[]" value="%papglanz%">
+    <p>Menge: %menge%</p>
+    <input type="hidden" name="flyerdaten[]" value="%menge%">
+    <p>Preis: %preis%</p>
+    <input type="hidden" name="flyerdaten[]" value="%preis%" onload="modal()">
+
+</div>
+<div class="Kundenformular">
+<input type="text" name="kundendaten[]" placeholder="Name"> <input type="text" name="kundendaten[]" placeholder="Vorname">
+<br>
+<input type="email" name="kundendaten[]" placeholder="example@aol.com">
+<br>
+<input type="text" name="kundendaten[]" placeholder="Straße u. Hausnummer">
+<br>
+<input type="number" name="kundendaten[]" placeholder="PLZ">
+<input type="text" name="kundendaten[]" placeholder="Ort">
+<br>
+</div>
+    <input type="file" name="datei" onload="modal()"><br>
+    <input type="submit" name="page" onclick="modal()" value="Hochladen & Bestellen">
+</form>
+%meldung%
+
+
+
+

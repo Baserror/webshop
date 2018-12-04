@@ -1,0 +1,115 @@
+<div class="flyerProdukte">
+
+    <h1 class="ÜberschriftProduct">
+        Flyer Klassiker
+    </h1>
+    <p>Flyergröße wählen</p>
+    <form method="POST" action="../public/index.php">
+        <input type="hidden" id="produktArt" name="flyerdaten[]" value="Flyer Klassiker">
+    <select class="chooseVariante" id="flyerGroße" name='flyerdaten[]' onchange="flyerBerechnung()">
+        <option>A4</option>
+        <option>A7</option>
+        <option>DINlang</option>
+    </select>
+    <p>Papierstärke</p>
+    <select class="chooseVariante" id="papstarkFlyer" name="flyerdaten[]" onchange="flyerBerechnung()">
+        <option>70g</option>
+        <option>90g</option>
+        <option>100g</option>
+        <option>135g</option>
+        <option>170g</option>
+        <option>250g</option>
+        <option>300g</option>
+    </select>
+    <select id="glanzFlyer" class="chooseVariante" name="flyerdaten[]" onchange="flyerBerechnung()">
+        <option>glänzend</option>
+        <option>matt</option>
+
+    </select>
+    <p>Anzahl</p>
+    <input type="number" id="flyerAnzahl" class="AnzahlAuswahl" name="flyerdaten[]" onchange="flyerBerechnung()">
+    <br><br>
+    <h2 id="preis" >Preis:</h2>
+        <input type="hidden" id="preisGet" name="flyerdaten[]">
+
+        <input type="submit" name='page' value="Bestellen" class="bestellBtn">
+    </form>
+</div>
+<div class="Faltblatt">
+
+    <h1 class="ÜberschriftProduct">
+        Faltblätter
+    </h1>
+    <form method="POST" action="../public/index.php">
+    <input type="hidden" id="produktArt" name="flyerdaten[]" value="Faltblätter">
+    <p>Faltart wählen</p>
+    <select class="chooseVariante" id="faltGroße" name="flyerdaten[]" onchange="faltBerechnung()">
+        <<option>A4</option>
+        <option>A7</option>
+        <option>A6</option>
+        <option>DINlang</option>
+    </select>
+    <p>Papierstärke</p>
+    <select class="chooseVariante" id="papstarkFalt" name="flyerdaten[]" onchange="faltBerechnung()"> {
+
+        }">
+        <option>70g</option>
+        <option>90g</option>
+        <option>100g</option>
+        <option>135g</option>
+        <option>170g</option>
+        <option>250g</option>
+        <option>300g</option>
+    </select>
+    <select id="glanzFalt" class="chooseVariante" name="flyerdaten[]" onchange="faltBerechnung()">
+        <option>glänzend</option>
+        <option>matt</option>
+        <option>gold</option>
+        <option>Recyclingpapier</option>
+
+    </select>
+    <p>Anzahl</p>
+    <input type="number" id="faltAnzahl" class="AnzahlAuswahl" name="flyerdaten[]" onchange="faltBerechnung()">
+    <br><br>
+        <h2 id="faltPreis" >Preis:</h2>
+        <input type="hidden" id="faltPreisGet" name="flyerdaten[]">
+        <input type="submit" name='page' value="Bestellen" class="bestellBtn">
+        </form>
+
+</div>
+
+<div class="poster">
+    <form method="POST" action="../public/index.php">
+    <h1 class="ÜberschriftProduct">
+        Poster
+    </h1>
+        <input type="hidden" id="produktArt" name="flyerdaten[]" value="Poster">
+    <p>Flyergröße wählen</p>
+    <select class="chooseVariante" name="flyerdaten[]" id="posterGroße" onchange="posterBerechnung()">
+        <option>A2</option>
+        <option>A3</option>
+    </select>
+    <p>Papierstärke</p>
+    <select class="chooseVariante" name="flyerdaten[]" id="papstarkPoster" onchange="posterBerechnung()"> {
+
+        }">
+        <option>70g</option>
+        <option>90g</option>
+        <option>100g</option>
+        <option>135g</option>
+        <option>170g</option>
+        <option>250g</option>
+        <option>300g</option>
+    </select>
+    <select id="glanzPoster" class="chooseVariante" name="flyerdaten[]" onchange="posterBerechnung()">
+        <option>glänzend</option>
+        <option>matt</option>
+    </select>
+    <p>Anzahl</p>
+    <input type="number" id="posterAnzahl" class="AnzahlAuswahl" name="flyerdaten[]" onchange="posterBerechnung()">
+    <br><br>
+    <h2 id="posterPreis" >Preis:</h2>
+    <input type="hidden" id="posterPreisGet" name="flyerdaten[]">
+    <input type="submit" name='page' value="Bestellen" class="bestellBtn">
+    </form>
+</div>
